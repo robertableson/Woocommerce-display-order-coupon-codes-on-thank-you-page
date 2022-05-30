@@ -1,6 +1,6 @@
 # Woocommerce PHP snippet to display order coupon codes on thank you page
 
-This is a PHP snippet that let's you easily display all order coupon codes on the thank you page.
+This is a PHP snippet that lets you easily display all order coupon codes on the thank you page. You can also easily style the coupon codes with CSS by changing and using the current <code>ra-coupon-code</code> class.
 
 Source: [Robert Ableson](https://robertableson.com/woocommerce-php-display-order-coupon-codes/)
 
@@ -16,7 +16,7 @@ function mn_add_row_to_order_details( $total_rows, $order ) {
 		$coupon_codes = '';
 
 		foreach( $order->get_coupon_codes() as $coupon ) {
-			$coupon_codes .= '<span class="mn-coupon-code">' . $coupon . '</span>, ';
+			$coupon_codes .= '<span class="ra-coupon-code">' . $coupon . '</span>, ';
 		}
 		
 		$total_rows['coupon_codes'] = array(
