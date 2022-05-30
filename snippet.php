@@ -7,7 +7,7 @@ function mn_add_row_to_order_details( $total_rows, $order ) {
 		$coupon_codes = '';
 
 		foreach( $order->get_coupon_codes() as $coupon ) {
-			$coupon_codes .= '<span class="mn-coupon-code">' . $coupon . '</span>, ';
+			$coupon_codes .= '<span class="ra-coupon-code">' . $coupon . '</span>, ';
 		}
 		
 		$total_rows['coupon_codes'] = array(
