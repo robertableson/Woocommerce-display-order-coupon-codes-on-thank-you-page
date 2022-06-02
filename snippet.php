@@ -1,6 +1,6 @@
 <?php
 
-//Here is the PHP snippet to show the coupon codes used on an order as a totals row
+//PHP snippet to show the coupon codes used on an order as a totals row
 
 function mn_add_row_to_order_details( $total_rows, $order ) {
 	if( $order->get_coupon_codes() ) {
